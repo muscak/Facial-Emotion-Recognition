@@ -8,6 +8,8 @@ The objective of this project involves leveraging Deep Learning and Artificial I
 
 You may see some of the example images for each emotion from the training set below. 
 
+<img src='Images/happy.png' align='center' alt='Ramdom images from the training set with happy faces'></img>
+
 Exact number of images for each set and for each emotion can be seen in Checking Distribution of Classes section.`
 
 Emotion recognition from the facial expressions using CNN
