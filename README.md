@@ -6,6 +6,10 @@ Recent research suggests that a significant portion, approximately 55%, of emoti
 
 The objective of this project involves leveraging Deep Learning and Artificial Intelligence methodologies to develop a computer vision model. This model aims to precisely identify emotions in facial expressions by performing multi-class classification on images of faces, effectively associating each expression with its corresponding emotion.
 
+You may see some of the example images for each emotion from the training set below. 
+
+Exact number of images for each set and for each emotion can be seen in Checking Distribution of Classes section.`
+
 Emotion recognition from the facial expressions using CNN
 
 This project has 3 sections:
