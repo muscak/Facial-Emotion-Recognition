@@ -8,6 +8,13 @@ The objective of this project involves leveraging Deep Learning and Artificial I
 
 ## Solution Design
 
+Emotion recognition from the facial expressions using CNN
+
+This project has 3 sections:
+1. Baseline model which created manually
+2. Transfer learning
+3. Hyperparameter optimization using Keras Tuner
+
 ### Data Exploration
 
 We have 20,214 images which are 48x48 in size and with 3 channels (Red Green Blue), consisting of three different image sets which are train, validation and test sets. Each set contains four different emotions (classes) that are happy, neutral, sad and surprised. You may see some of the example images for each emotion from the training set below. 
@@ -36,15 +43,6 @@ First we convert the images into grayscale. As you can see in the above image ev
 <p align='center' >
   <img src='Images/augmented-images.png' align='center' alt='Augmented images'></img>
 </p>
-
-
-
-Emotion recognition from the facial expressions using CNN
-
-This project has 3 sections:
-1. Baseline model which created manually
-2. Transfer learning
-3. Hyperparameter optimization using Keras Tuner
 
 ---
 # Bibliography
