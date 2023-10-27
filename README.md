@@ -6,9 +6,21 @@ Recent research suggests that a significant portion, approximately 55%, of emoti
 
 The objective of this project involves leveraging Deep Learning and Artificial Intelligence methodologies to develop a computer vision model. This model aims to precisely identify emotions in facial expressions by performing multi-class classification on images of faces, effectively associating each expression with its corresponding emotion.
 
-You may see some of the example images for each emotion from the training set below. 
+## Solution Design
 
-<img src='Images/happy.png' align='center' alt='Ramdom images from the training set with happy faces'></img>
+### Data Exploration
+
+We have 20,214 images consisting of three different image sets which are train, validation and test sets. Each set contains four different emotions (classes) that are happy, neutral, sad and surprised. You may see some of the example images for each emotion from the training set below. 
+
+<img src='Images/emotions.jpg' align='center' alt='Ramdom images from the training set with happy faces'></img>
+
+|     |Train|Validation|Test|Total|
+|----:|:---:|:--------:|:--:|:---:|
+|Happy|3,976|1,825|32|5,833|
+|Neutral|3,978|1,216|32|5,226|
+|Sad|3,982|1,139|32|5,153|
+|Surprised|3,173|797|32|4,002|
+|**Total**|**15,109**|**4,977**|**128**|**20,214**|
 
 Exact number of images for each set and for each emotion can be seen in Checking Distribution of Classes section.`
 
