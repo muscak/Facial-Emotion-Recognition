@@ -31,7 +31,7 @@ As you can see in below plot, the training set is almost balanced. That's why we
   <img src='Images/distribution-train-set.png' align='center' alt='Distribution of the classes in training set'></img>
 </p>
 
-First we convert the images into grayscale. As you can see in the above image even though the images have 3 channels (RGB), all of them are grayscale. Then, we implemented several image augmentation techniques to enhance our dataset.One technique involved a random brightness shift between 0 and 2 for images in the training set. Another augmentation involved horizontal image flipping. Furthermore, we applied random spatial shearing to the training images, allowing up to a 30% shearing effect. These augmentations only applied to the training set not to cause any data leakage.
+First we convert the images into grayscale. As you can see in the above image even though the images have 3 channels (RGB), all of them are grayscale. Then, we implemented several image augmentation techniques to enhance our dataset. One technique involved a random brightness shift between 0 and 2 for images in the training set. Another augmentation involved horizontal image flipping. Furthermore, we applied random spatial shearing to the training images, allowing up to a 30% shearing effect. These augmentations only applied to the training set not to cause any data leakage. You may see some examples of the augmented images below.
 
 <p align='center' >
   <img src='Images/augmented-images.png' align='center' alt='Augmented images'></img>
