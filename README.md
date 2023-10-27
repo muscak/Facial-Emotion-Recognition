@@ -12,7 +12,11 @@ The objective of this project involves leveraging Deep Learning and Artificial I
 
 We have 20,214 images consisting of three different image sets which are train, validation and test sets. Each set contains four different emotions (classes) that are happy, neutral, sad and surprised. You may see some of the example images for each emotion from the training set below. 
 
-<img src='Images/emotions.jpg' align='center' alt='Ramdom images from the training set with happy faces'></img>
+<img src='Images/emotions.jpg' align='center' alt='Ramdom images from the training set for facial expression'></img>
+
+As you may see, the dataset contains people from different age groups, different gender and different ethnicity. All images reflect certain characteristics of the related emotions, such as happy people smile, most of these people show their teeth while smiling; sad people frown and some of them are closed eyes even with face palming; surprised people are open mouths and some of them put their hands around their cheeks; and finally people who don’t have any kind of emotion (neutral) the moment the picture taken, don't show any kind of a facial expression which differentiate from the other emotions. Some people are with glasses which might make our model robust against having this type of objects in the images.
+
+Exact number of images for each set and for each emotion can be seen in below table.`
 
 |     |Train|Validation|Test|Total|
 |----:|:---:|:--------:|:--:|:---:|
@@ -22,7 +26,9 @@ We have 20,214 images consisting of three different image sets which are train, 
 |Surprised|3,173|797|32|4,002|
 |**Total**|**15,109**|**4,977**|**128**|**20,214**|
 
-Exact number of images for each set and for each emotion can be seen in Checking Distribution of Classes section.`
+As you can see in below plot, the training set is almost balanced. That's why we can only focus on the accuracy score metric. However, we might need to pay attention to how the model is performing for the surprise emotion since it has the least number of images.
+
+<img src='Images/distribution-train-set.png' align='center' alt='Distribution of the classes in training set'></img>
 
 Emotion recognition from the facial expressions using CNN
 
