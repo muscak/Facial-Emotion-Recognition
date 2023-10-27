@@ -10,7 +10,7 @@ The objective of this project involves leveraging Deep Learning and Artificial I
 
 ### Data Exploration
 
-We have 20,214 images consisting of three different image sets which are train, validation and test sets. Each set contains four different emotions (classes) that are happy, neutral, sad and surprised. You may see some of the example images for each emotion from the training set below. 
+We have 20,214 images which are 48x48 in size and with 3 channels (Red Green Blue), consisting of three different image sets which are train, validation and test sets. Each set contains four different emotions (classes) that are happy, neutral, sad and surprised. You may see some of the example images for each emotion from the training set below. 
 
 <img src='Images/emotions.jpg' align='center' alt='Ramdom images from the training set for facial expression'></img>
 
@@ -27,8 +27,17 @@ Exact number of images for each set and for each emotion can be seen in below ta
 |**Total**|**15,109**|**4,977**|**128**|**20,214**|
 
 As you can see in below plot, the training set is almost balanced. That's why we can only focus on the accuracy score metric. However, we might need to pay attention to how the model is performing for the surprise emotion since it has the least number of images.
+<p align='center' >
+  <img src='Images/distribution-train-set.png' align='center' alt='Distribution of the classes in training set'></img>
+</p>
 
-<img src='Images/distribution-train-set.png' align='center' alt='Distribution of the classes in training set'></img>
+First we convert the images into grayscale. As you can see in the above image even though the images have 3 channels (RGB), all of them are grayscale. Then, we implemented several image augmentation techniques to enhance our dataset.One technique involved a random brightness shift between 0 and 2 for images in the training set. Another augmentation involved horizontal image flipping. Furthermore, we applied random spatial shearing to the training images, allowing up to a 30% shearing effect. These augmentations only applied to the training set not to cause any data leakage.
+
+<p align='center' >
+  <img src='Images/augmented-images.png' align='center' alt='Augmented images'></img>
+</p>
+
+
 
 Emotion recognition from the facial expressions using CNN
 
