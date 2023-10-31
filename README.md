@@ -11,7 +11,7 @@ The objective of this project involves leveraging Deep Learning and Artificial I
 Emotion recognition from the facial expressions using CNN
 
 This project has 3 sections:
-1. Baseline model which created manually
+1. Baseline models which are created manually
 2. Transfer learning
 3. Hyperparameter optimization using Keras Tuner
 
@@ -43,6 +43,8 @@ First we convert the images into grayscale. As you can see in the above image ev
 <p align='center' >
   <img src='Images/augmented-images.png' align='center' alt='Augmented images'></img>
 </p>
+
+### Baseline Models
 
 ---
 # Bibliography
